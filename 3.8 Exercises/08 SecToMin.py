@@ -1,4 +1,2 @@
 usec = int(input("How many seconds?: "))
-min = usec//60
-sec = usec % 60
-print(usec, "seconds is", min, "minute(s) and", sec, "second(s).")
+print(usec, "seconds is", usec//60, "minute(s) and", usec % 60, "second(s).")
