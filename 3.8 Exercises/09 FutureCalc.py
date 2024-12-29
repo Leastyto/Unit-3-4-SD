@@ -1,3 +1,6 @@
 hour = int(input("Enter hour: "))
 phour = int(input("How many hours ahead?: "))
-print("New hour:", (hour+phour) % 12, "o'clock")
+ans = (hour+phour) % 12
+if (hour+phour) % 12 == 0:
+    ans = 12
+print("New hour:", ans, "o'clock")
