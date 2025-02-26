@@ -1,0 +1,12 @@
+tbMerged = [9,2,1,6,2,3,6,7,4,5,8]
+def Splitter(array):
+    mergeLen = len(array)
+    print(mergeLen, mergeLen//2)
+    global leftSide
+    global rightSide
+    leftSide = tbMerged[:mergeLen//2]
+    rightSide = tbMerged[mergeLen//2:]
+    Splitter(leftSide)
+    Splitter(rightSide)
+Splitter(tbMerged)
+print(leftSide, rightSide)
